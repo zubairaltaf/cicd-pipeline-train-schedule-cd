@@ -29,7 +29,7 @@ pipeline {
                                         sourceFiles: 'dist/tranSchedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'sudo /usr/bin/systemctl stop train-schedule && rm -rf /opt/train-schedule/'
+                                        execCommand: 'sudo /usr/bin/systemctl stop train-schedule && sudo rm -rf /opt/train-schedule/'
                                     )
                                 ]
                            )
@@ -61,7 +61,7 @@ pipeline {
                                         sourceFiles: 'dist/tranSchedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'sudo /usr/bin/systemctl stop train-schedule && rm -rf /opt/train-schedule/'
+                                        execCommand: 'sudo /usr/bin/systemctl stop train-schedule && sudo rm -rf /opt/train-schedule/'
                                     )
                                 ]
                            )
